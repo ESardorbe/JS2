@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная фотогалерея</title>
+    <style>
+        #image {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        .preview {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="initializeGallery()">
+<div id="image">Наведите курсор на изображение ниже, чтобы отобразить его здесь</div>
+
+<img src="landscape.jpg" alt="Фото 1" class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+<img src="laptop.png" alt="Фото 2" class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+<img src="router.png" alt="Фото 3" class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+<img src="satellite.png" alt="Фото 4" class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+<img src="signal-tower.png" alt="Фото 5" class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+<img src="smart-tv.png" alt="Фото 6" class="preview" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()" tabindex="0">
+
+<script src="script.js"></script>
+</body>
+</html>
